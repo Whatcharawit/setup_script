@@ -6,5 +6,5 @@ sudo docker run --name pgadmin -p 82:80 -e 'PGADMIN_DEFAULT_EMAIL=admin@artron.c
 
 sudo apt-get update
 sudo service docker restart
-sudo docker start postgres
-sudo docker pgadmin
+sudo docker restart postgres
+sudo docker restart pgadmin
