@@ -1,8 +1,9 @@
 #!/bin/bash
 
 cd 
-mkdir -p ~/.docker/cli-plugins/
-curl -SL https://github.com/docker/compose/releases/download/v2.3.3/docker-compose-linux-x86_64 -o ~/.docker/cli-plugins/docker-compose
+sudo apt-get update
+sudo apt-get install docker-compose-plugin -y
+
 sudo service docker restart
 echo "docker restarted!"
 sudo docker-compose --version
