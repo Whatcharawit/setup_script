@@ -2,10 +2,8 @@
 
 cd 
 sudo apt-get update
-sudo apt-get install docker-compose-plugin -y
-
-sudo service docker restart
-echo "docker restarted!"
+sudo apt install docker-compose -y
+sudo curl -L https://github.com/docker/compose/releases/download/v2.16.0/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
 sudo docker-compose --version
 
 git clone https://github.com/brocaar/chirpstack-docker.git
