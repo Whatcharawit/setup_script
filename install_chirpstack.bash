@@ -7,6 +7,8 @@ docker-compose --version
 git clone https://github.com/brocaar/chirpstack-docker.git
 
 ls
+cd setup_script
+ls
 cp docker-compose.yml ~/chirpstack-docker/docker-compose.yml
 cp region_as923.toml ~/chirpstack-docker/configuration/chirpstack/region_as923.toml
 cp chirpstack-gateway-bridge.toml ~/chirpstack-docker/configuration/chirpstack-gateway-bridge/chirpstack-gateway-bridge.toml
